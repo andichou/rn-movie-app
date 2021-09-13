@@ -14,7 +14,7 @@ export const SplashScreen: React.FC<Props> = (props) => {
 
   return (
       <Modal visible={isModalVisible} animationType="fade">
-        <LottieView source={require('../../assets/welcome.json')}
+        <LottieView source={require('../../assets/images/welcome.json')}
                     autoPlay
                     loop={false}
                     onAnimationFinish={handleAnimationFinish} />
