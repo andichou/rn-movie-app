@@ -44,6 +44,7 @@ const style = StyleSheet.create({
     image: {
         overflow: 'hidden',
         backgroundColor: LIGHT_GRAY,
-        marginRight: 15
+        marginRight: 15,
+        marginBottom: 15
     }
 })

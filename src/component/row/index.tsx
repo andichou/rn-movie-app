@@ -1,7 +1,6 @@
 import React from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { ORANGE } from '../../common/constants';
-import { MovieInterface } from '../../redux/types';
 import { ImageTile } from '../image';
 
 interface Props {
@@ -15,11 +14,11 @@ export const Row: React.FC<Props> = ({
     const handleViewDetail = () => {};
 
     return (
-        <View style={{ marginBottom: 30 }}>
+        <View style={{ marginBottom: 15 }}>
             <Text style={style.title}>{ title }</Text>
             <FlatList data={datas}
                       horizontal
-                      renderItem={({ item }: {item: MovieInterface}) => <ImageTile path={item.poster_path}
+                      renderItem={({ item }: {item: any}) => <ImageTile path={item.poster_path}
                                                            height={220}
                                                            width={150}
                                                            accessibilityRole={'imagebutton'}

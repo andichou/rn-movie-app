@@ -16,22 +16,22 @@ export const FETCH_POPULAR_TV = 'FETCH_POPULAR_TV';
 export const FETCH_TOP_TV = 'FETCH_TOP_TV';
 export const FETCH_ON_AIR_TV = 'FETCH_ON_AIR_TV';
 
-interface FetchPopularMovieAction {
+interface FetchPopularTvAction {
     type: typeof FETCH_POPULAR_TV,
     payload: TVInterface[];
 }
 
-interface FetchTopMovieAction {
+interface FetchTopTvAction {
     type: typeof FETCH_TOP_TV,
     payload: TVInterface[];
 }
 
-interface FetchOnAirMovieAction {
+interface FetchOnAirTvAction {
     type: typeof FETCH_ON_AIR_TV,
     payload: TVInterface[];
 }
 
 export type TvActionTypes
-    = FetchPopularMovieAction
-    | FetchTopMovieAction
-    | FetchOnAirMovieAction;
+    = FetchPopularTvAction
+    | FetchTopTvAction
+    | FetchOnAirTvAction;
