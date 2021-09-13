@@ -1,9 +1,9 @@
-const BLACK = '#000000';
-const WHITE = '#FFFFFF';
-const ORANGE = '#FC6B02';
-const YELLOW = "#FFD700";
-const GRAY = "#E9E9E9";
-const LIGHT_GRAY = "#F0F0F0";
+export const BLACK = '#000000';
+export const WHITE = '#FFFFFF';
+export const ORANGE = '#FC6B02';
+export const YELLOW = "#FFD700";
+export const GRAY = "#E9E9E9";
+export const LIGHT_GRAY = "#F0F0F0";
 
 export default {
     light: {

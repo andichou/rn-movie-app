@@ -8,7 +8,7 @@ import React from 'react';
 import { ColorSchemeName } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
-import { LabelConstant } from '../common/constants/labelConstant';
+import { LabelConstant } from '../common/constants';
 import useTheme from '../hooks/useTheme';
 import { Movie } from '../screen/Movie';
 import linking from './route';

@@ -1,5 +1,5 @@
 import { LinkingOptions } from '@react-navigation/native';
-import { PathConstant } from '../common/constants/pathConstant';
+import { PathConstant } from '../common/constants';
 import { RootStackParamList } from './types';
 
 const linking: LinkingOptions<RootStackParamList> = {
