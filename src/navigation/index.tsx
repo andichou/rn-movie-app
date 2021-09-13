@@ -11,6 +11,7 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { LabelConstant } from '../common/constants';
 import useTheme from '../hooks/useTheme';
 import { Movie } from '../screen/Movie';
+import { Tv } from '../screen/Tv';
 import linking from './route';
 import { RootStackParamList, RootTabParamList } from './types';
 
@@ -56,7 +57,7 @@ const bottomTabNavigator = () => {
                               }}
             />
             <BottomTab.Screen name="TV"
-                              component={Movie}
+                              component={Tv}
                               options={{
                                   title: LabelConstant.TV,
                                   tabBarIcon: ({ color }: {color: string}) => <TabBarIcon icon={faTv} color={color} />,
