@@ -19,11 +19,11 @@ export const Row: React.FC<Props> = ({
             <FlatList data={datas}
                       horizontal
                       renderItem={({ item }: {item: any}) => <ImageTile path={item.poster_path}
-                                                           height={220}
-                                                           width={150}
-                                                           accessibilityRole={'imagebutton'}
-                                                           accessibilityLabel={`${item.title} image`}
-                                                           callback={handleViewDetail} />}
+                                                                        height={220}
+                                                                        width={150}
+                                                                        accessibilityRole={'imagebutton'}
+                                                                        accessibilityLabel={`${item.title} image`}
+                                                                        callback={handleViewDetail} />}
                       keyExtractor={(item) => item.id.toString()}
                       style={{ marginRight: 11, marginTop: 4 }}
                       showsHorizontalScrollIndicator={false} />
