@@ -18,7 +18,7 @@ const App: React.FC = () => {
         <Provider store={store}>
             <StatusBar barStyle="dark-content" hidden />
             <SafeAreaView>
-                {/*<SplashScreen />*/}
+                <SplashScreen />
             </SafeAreaView>
             <PeopleStateWrap>
                 <Navigation theme={theme} />
