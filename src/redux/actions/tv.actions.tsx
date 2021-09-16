@@ -7,7 +7,7 @@ import {
     TvActionTypes,
     TVInterface
 } from '../types';
-import { request } from './common.actions';
+import { failure, request } from './common.actions';
 
 const fetchPopularTvSuccess: ActionCreator<TvActionTypes> = (tvs: TVInterface[]) => {
     return { type: FETCH_POPULAR_TV, payload: tvs };
@@ -28,7 +28,7 @@ export function fetchPopularTv() {
                     dispatch(fetchPopularTvSuccess(response))
                 },
                 error => {
-                    dispatch(fail('Something went wrong'))
+                    dispatch(failure('Something went wrong'))
                 })
     }
 }
@@ -42,7 +42,7 @@ export function fetchTopTv() {
                     dispatch(fetchTopTvSuccess(response))
                 },
                 error => {
-                    dispatch(fail('Something went wrong'))
+                    dispatch(failure('Something went wrong'))
                 })
     }
 }
@@ -56,7 +56,7 @@ export function fetchOnAirTv() {
                     dispatch(fetchOnAirTvSuccess(response))
                 },
                 error => {
-                    dispatch(fail('Something went wrong'))
+                    dispatch(failure('Something went wrong'))
                 })
     }
 }

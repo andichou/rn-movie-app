@@ -37,4 +37,4 @@ describe('Image Component', () => {
         expect(component.find(Image).length).toEqual(1);
         expect(component.find(Image).prop("source")).toEqual(expectedSource);
     });
-});
+})

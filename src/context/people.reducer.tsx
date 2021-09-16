@@ -1,4 +1,4 @@
-import { FETCH_POPULAR_PEOPLE, PeopleActionTypes, PeopleInterface } from '../types';
+import { FETCH_POPULAR_PEOPLE, PeopleActionTypes, PeopleInterface } from '../redux/types';
 
 export interface PeopleState {
     popularPeoples: PeopleInterface[];

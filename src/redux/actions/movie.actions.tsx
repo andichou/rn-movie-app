@@ -8,7 +8,7 @@ import {
     MovieActionTypes,
     MovieInterface
 } from '../types';
-import { request } from './common.actions';
+import { failure, request } from './common.actions';
 
 const fetchPopularMoviesSuccess: ActionCreator<MovieActionTypes> = (movies: MovieInterface[]) => {
     return { type: FETCH_POPULAR_MOVIES, payload: movies };
@@ -46,7 +46,7 @@ export function fetchTopMovies() {
                     dispatch(fetchTopMoviesSuccess(response))
                 },
                 error => {
-                    dispatch(fail('Something went wrong'))
+                    dispatch(failure('Something went wrong'))
                 })
     }
 }
@@ -60,7 +60,7 @@ export function fetchUpcomingMovies() {
                     dispatch(fetchUpcomingMoviesSuccess(response))
                 },
                 error => {
-                    dispatch(fail('Something went wrong'))
+                    dispatch(failure('Something went wrong'))
                 })
     }
 }
@@ -74,7 +74,7 @@ export function fetchNowMovies() {
                     dispatch(fetchNowMoviesSuccess(response))
                 },
                 error => {
-                    dispatch(fail('Something went wrong'))
+                    dispatch(failure('Something went wrong'))
                 })
     }
 }

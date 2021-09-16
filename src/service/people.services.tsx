@@ -1,14 +1,14 @@
 import { EndpointConstant } from '../common/constants';
 import { apiService } from '../common/network/apiService';
-import { TVInterface } from '../redux/types';
+import { PeopleInterface } from '../redux/types';
 
 const BASE_ENDPOINT = EndpointConstant.PERSON;
 
 export const peopleService = {
-    fetchPopularPeoples
+    fetchPopularPeoples,
 };
 
-async function fetchPopularPeoples(): Promise<TVInterface[]> {
+async function fetchPopularPeoples(): Promise<PeopleInterface[]> {
     const endpoint = `${BASE_ENDPOINT}${EndpointConstant.POPULAR}`
     return await apiService(endpoint, 'GET', null);
 }

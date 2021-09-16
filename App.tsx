@@ -4,6 +4,7 @@ import {
   StatusBar
 } from 'react-native';
 import { Provider } from 'react-redux';
+import { PeopleStateWrap } from './src/context/people.state';
 import Navigation from './src/navigation';
 import { store } from './src/redux/store';
 
@@ -17,9 +18,11 @@ const App: React.FC = () => {
         <Provider store={store}>
             <StatusBar barStyle="dark-content" hidden />
             <SafeAreaView>
-                <SplashScreen />
+                {/*<SplashScreen />*/}
             </SafeAreaView>
-            <Navigation theme={theme} />
+            <PeopleStateWrap>
+                <Navigation theme={theme} />
+            </PeopleStateWrap>
         </Provider>
     );
 };

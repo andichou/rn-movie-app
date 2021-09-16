@@ -5,7 +5,7 @@ import {
     PeopleActionTypes,
     PeopleInterface
 } from '../types';
-import { request } from './common.actions';
+import { failure, request } from './common.actions';
 
 const fetchPopularPeopleSuccess: ActionCreator<PeopleActionTypes> = (peoples: PeopleInterface[]) => {
     return { type: FETCH_POPULAR_PEOPLE, payload: peoples };
@@ -20,7 +20,7 @@ export function fetchPopularPeople() {
                     dispatch(fetchPopularPeopleSuccess(response))
                 },
                 error => {
-                    dispatch(fail('Something went wrong'))
+                    dispatch(failure('Something went wrong'))
                 })
     }
 }
